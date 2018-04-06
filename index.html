@@ -8,9 +8,25 @@
    <link rel="stylesheet" href="./assets/css/app.css">
 </head>
 <body class="l-app">
-   <header class="l-app__titlebar titlebar"></header>
+   <header class="l-app__titlebar titlebar">
+      <span class="titlebar__path">/home/sheiko/Sites/file-explorer</span>
+      <a href="#" class="titlebar__btn">_</a>
+      <a href="#" class="titlebar__btn is-hidden"></a>
+      <a href="#" class="titlebar__btn"></a>
+      <a href="#" class="titlebar__btn"></a>
+   </header>
    <div class="l-app__main l-main">
-      <aside class="l-main__dir-list dir-list"></aside>
+      <aside class="l-main__dir-list dir-list">
+         <nav>
+            <ul>
+               <li class="dir-list__li">..</li>
+               <li class="dir-list__li">assets</li>
+               <li class="dir-list__li">js</li>
+               <li class="dir-list__li">node_modules</li>
+               <li class="dir-list__li">tests</li>
+            </ul>
+         </nav>
+      </aside>
       <main class="l-main__file-list file-list"></main>
    </div>
    <footer class="l-app__footer footer"></footer>
